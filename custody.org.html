@@ -6,8 +6,11 @@
 
 	Notice of Copyrights and Licenses:
 	***********************************
-	The bitaddress.org project, software and embedded resources are copyright bitaddress.org (pointbiz). 
-	The bitaddress.org name and logo are not part of the open source license.
+	The custody
+	.org project, software and embedded resources are copyright custody
+	.org (pointbiz). 
+	The custody
+	.org name and logo are not part of the open source license.
 
 	Portions of the all-in-one HTML document contain JavaScript codes that are the copyrights of others. 
 	The individual copyrights are included throughout the document along with their licenses.
@@ -24,8 +27,10 @@
 	window.Bitcoin			MIT License
 	window.Crypto_scrypt		MIT License
 
-	The bitaddress.org software is available under The MIT License (MIT)
-	Copyright (c) 2011-2016 bitaddress.org (pointbiz)
+	The custody
+	.org software is available under The MIT License (MIT)
+	Copyright (c) 2011-2016 custody
+	.org (pointbiz)
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
 	associated documentation files (the "Software"), to deal in the Software without restriction, including 
@@ -42,10 +47,12 @@
 	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-	GitHub Repository: https://github.com/pointbiz/bitaddress.org
+	GitHub Repository: https://github.com/pointbiz/custody
+	.org
 	-->
 
-	<title>bitaddress.org</title>
+	<title>custody
+		.org</title>
 	<meta charset="utf-8">
 
 	<script type="text/javascript">
@@ -1432,7 +1439,8 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 * <body onclick='SecureRandom.seedTime();' onkeypress='SecureRandom.seedTime();'>
 * in your main HTML document.
 * 
-* Copyright Tom Wu, bitaddress.org  BSD License.
+* Copyright Tom Wu, custody
+.org  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
 (function () {
@@ -1619,7 +1627,8 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 * Ported loosely from BouncyCastle's Java EC code
 * Only Fp curves implemented for now
 * 
-* Copyright Tom Wu, bitaddress.org  BSD License.
+* Copyright Tom Wu, custody
+.org  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
 (function () {
@@ -1681,7 +1690,8 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	* returns the right value - if none exists it returns null.
 	* 
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-	* Ported to JavaScript by bitaddress.org
+	* Ported to JavaScript by custody
+	.org
 	*/
 	ec.FieldElementFp.prototype.sqrt = function () {
 		if (!this.q.testBit(0)) throw new Error("even value of q");
@@ -1731,7 +1741,8 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/*
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-	* Ported to JavaScript by bitaddress.org
+	* Ported to JavaScript by custody
+	.org
 	*/
 	ec.FieldElementFp.fastLucasSequence = function (p, P, Q, k) {
 		// TODO Research and apply "common-multiplicand multiplication here"
@@ -1960,7 +1971,8 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 		return R;
 	};
 
-	// patched by bitaddress.org and Casascius for use with Bitcoin.ECKey
+	// patched by custody
+	.org and Casascius for use with Bitcoin.ECKey
 	// patched by coretechs to support compressed public keys
 	ec.PointFp.prototype.getEncoded = function (compressed) {
 		var x = this.getX().toBigInteger();
@@ -2165,7 +2177,8 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	};
 
 	// for now, work with hex strings because they're easier in JS
-	// compressed support added by bitaddress.org
+	// compressed support added by custody
+	.org
 	ec.CurveFp.prototype.decodePointHex = function (s) {
 		var firstByte = parseInt(s.substr(0, 2), 16);
 		switch (firstByte) { // first byte
@@ -2210,7 +2223,8 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/*
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-	* Ported to JavaScript by bitaddress.org
+	* Ported to JavaScript by custody
+	.org
 	*
 	* Number yTilde
 	* BigInteger X1
@@ -6363,7 +6377,7 @@ Bitcoin.Util = {
 			no-repeat left center; width: 17px; height: 17px; display: inline-block; float: right; }
 a { position: relative; z-index: 20; }
 .right { text-align: right; }
-.walletarea { display: none; border: 2px solid gray; }
+.walletarea { display: none; border: 2px solid gray ; }
 hr { margin: 20px 0; border-top: 2px dashed #008000; }
 .keyarea { height: 110px; text-align: left; position: relative; padding: 5px; }
 .keyarea .public { float: left; }
@@ -6409,7 +6423,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #main { position: relative; text-align: center; margin: 0px auto; width: 808px; }
 #img-div {  display: flex; flex-direction: column ; justify-content: center; align-items: center;}
 #logo-img { width: 100px; height: 100px; }
-#logo-text { width: 150px; height: 50px; }
+#logo-text { width: 250px; height: 80px; }
 		
 #paperarea { min-height: 120px; display: none; }
 #paperarea .keyarea { border: 2px solid gray; border-top: 0; }
@@ -6564,7 +6578,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	#bulkstartindex, #paperlimit, #paperlimitperpage { width: 35px; } 
 	#bulklimit { width: 45px; }
 			
-	.footer { font-size: 90%; clear: both; width: 770px; padding: 10px 0 10px 0; margin: 50px auto auto auto; }
+	.footer { font-size: 90%; clear: both; width: 770px; padding: 10px 0 10px 0; margin: 10px auto auto auto; }
 	.footer div span.item { padding: 10px; }
 	.footer .authorbtc {  width: 470px; text-align: center; background: red; }
 	.footer .authorbtc-main {  display: flex ; flex-direction: column; justify-content: center; align-items: center; }
@@ -6572,7 +6586,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	.footer .authorbtc div {  z-index: 100; }
 	.footer .authorpgp { margin: 0;}
 	.footer .authorpgp span.item {  display: flex; padding: 0  ; align-items: center; justify-content: center;}
-	.footer .copyright { font-size: 80%; clear: both; padding: 5px 0; }
+	.footer .copyright { font-size: 80%; clear: both; padding: 5px 0;  }
 	.footer .copyright span { padding: 10px 2px; }
     .footer .tooltip { display: none; text-align: left; border: 2px solid green; background-color: #FFFFF6; margin: 5px; padding: 10px; top: 0px; position: relative;  }
 	.footer .statusgood { color: green; font-weight: bold; }
@@ -6628,7 +6642,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 		<img alt="castody.org" title="castody.org" id="logo-text" src="/castody-text.png" />
 		
 		</div>
-		<div id="tagline">Open Source JavaScript Client-Side Bitcoin Wallet Generator</div>
+		<div id="tagline">Multi-Signature Offline Self Custody Wallet Generator</div>
 		<div id="seedpoolarea"><textarea rows="16" cols="62" id="seedpool"></textarea></div>
 		<div id="testnet"></div>
 		<ul class="menu" id="menu">
@@ -7002,7 +7016,8 @@ input[type=checkbox] { position: relative; z-index: 20; }
 				<div class="tooltip" id="statusprotocolbad">
 					<span class="statuswarn" id="statuslabelprotocolbad">&#9888; Think twice!</span>
 					<span id="statuslabelprotocolbad1">You appear to be running this generator online from a live website. For valuable wallets it is recommended to</span>
-					<a id="statuslabelprotocolbad2" href="https://github.com/pointbiz/bitaddress.org/archive/v3.3.0.zip">download</a>
+					<a id="statuslabelprotocolbad2" href="https://github.com/pointbiz/custody
+					.org/archive/v3.3.0.zip">download</a>
 					<span id="statuslabelprotocolbad3">the zip file from GitHub and run this generator offline as a local html file.</span>
 					<br /><br /><input type="button" value="OK" class="button" id="statusokprotocolbad" onclick="document.getElementById('statusprotocolbad').style.display = 'none';" />
 				</div>
@@ -7034,7 +7049,8 @@ input[type=checkbox] { position: relative; z-index: 20; }
 						<span class="item"><span id="footerlabeldonations"></span> <b></b></span>
 						<span class="item" id="footerlabeltranslatedby"></span>
 						<span class="item"><a href="https://castody.org/" target="_blank" id="footerlabelgithub">https://castody.org/</a> 
-							<a href="https://github.com/pointbiz/bitaddress.org/archive/v3.3.0.zip" target="_blank" id="footerlabelgithubzip"></a></span>
+							<a href="https://github.com/pointbiz/custody
+							.org/archive/v3.3.0.zip" target="_blank" id="footerlabelgithubzip"></a></span>
 					</div>
 				</div>
 				<div class="authorpgp">
@@ -7044,7 +7060,8 @@ input[type=checkbox] { position: relative; z-index: 20; }
 					</span>
 					<span class="item">527B 5C82 B1F6 B2DB 72A0<br />ECBF 8749 7B91 6397 4F5A</span>
 					<span class="item">
-						(<a href="pointbiz_bitaddress.org.asc" target="_blank" id="footerlabelpgp">PGP</a>)
+						(<a href="pointbiz_custody
+						.org.asc" target="_blank" id="footerlabelpgp">PGP</a>)
 						(<a href="javascript:window.location=window.location.pathname+'.sig';" target="_blank" id="footerlabelsig">sig</a>)
 					</span>
 				</div>
@@ -7934,7 +7951,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub Repository",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "Copyright JavaScriptu je uveden ve zdrojovém kódu.",
 		"footerlabelnowarranty": "Bez záruky.",
 
@@ -8100,7 +8118,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub-Repository",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "JavaScript-Copyrights sind im Quelltext enthalten.",
 		"footerlabelnowarranty": "Ohne Gew&auml;hr.",
 
@@ -8266,7 +8285,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Αποθετήριο GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "Τα πνευματικά δικαιώματα της JavaScript περιλαμβάνονται στον κώδικα.",
 		"footerlabelnowarranty": "Καμία εγγύηση.",
 
@@ -8432,7 +8452,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Repositorio GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "Copyright del código JavaScript: en el fuente.",
 		"footerlabelnowarranty": "Sin garantía.",
 
@@ -8598,7 +8619,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Dépôt GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "Les droits d'auteurs JavaScript sont inclus dans le code source.",
 		"footerlabelnowarranty": "Aucune garantie.",
 
@@ -8765,7 +8787,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub kódtár",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "Az egyes JavaScript kódok szerzőinek jogai a forráskódon belül találhatók meg.",
 		"footerlabelnowarranty": "Garancia nincs.",
 
@@ -8938,7 +8961,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Repository GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "Le note di copyright dei file JavaScript sono inclusi nei sorgenti stessi.",
 		"footerlabelnowarranty": "Nessuna garanzia.",
 
@@ -9104,7 +9128,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHubリポジトリ",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "JavaScriptのコピーライト情報はソースに含まれています。",
 		"footerlabelnowarranty": "保障はありません。",
 
@@ -9277,7 +9302,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Repositório GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "Copyright do código JavaScript: no código-fonte.",
 		"footerlabelnowarranty": "Sem garantia.",
 
@@ -9443,7 +9469,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Проект на GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Копирайт bitaddress.org.",
+		"footerlabelcopyright1": "Копирайт custody
+		.org.",
 		"footerlabelcopyright2": "Информация о копирайте на JavaScript в исходниках.",
 		"footerlabelnowarranty": "Без гарантий.",
 
@@ -9608,7 +9635,8 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub页面",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright custody
+		.org.",
 		"footerlabelcopyright2": "JavaScript的版权信息已经包含在源代码中。",
 		"footerlabelnowarranty": "No warranty",
 
@@ -11067,7 +11095,8 @@ ninja.wallets.splitwallet = {
 				return true;
 			},
 			testBrainToECKey: function () {
-				var key = "bitaddress.org unit test";
+				var key = "custody
+				.org unit test";
 				var bytes = Crypto.SHA256(key, { asBytes: true });
 				var btcKey = new Bitcoin.ECKey(bytes);
 				if (btcKey.getBitcoinWalletImportFormat() != "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb") {
